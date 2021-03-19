@@ -25,7 +25,7 @@ class AbstractReverseSearchEngine(ABC):
     def get_info_from_search_engine(self, orig_img: str):
         pass
 
-    def search(self, orig_img: str):
+    def search(self, orig_img: str) -> [ReverseImageInfo]:
         return self.get_info_from_search_engine(orig_img)
 
 
